@@ -26,7 +26,7 @@ binding.pry
       rescue TriangleError => error
           puts error.message
       end
-    else 
+    else
       return kind
     end
   end
