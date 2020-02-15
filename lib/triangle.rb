@@ -17,7 +17,7 @@ class Triangle
       kind = :scalene
     end
 
-binding.pry
+#binding.pry
 
     if kind == nil || @sides.find{|side| negative?(side)} != nil
       kind == nil
