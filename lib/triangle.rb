@@ -29,11 +29,12 @@ class Triangle
     if @sides.find{|side| side <= 0} != nil
       return false
     end
-binding.pry
     #triangle inequality
     if @sides[0] + @sides[1] < @sides[2] || @sides[0] + @sides[2] < @sides[1] || @sides[1] + @sides[2] < @sides[0]
       return false
     end
+    
+binding.pry
     true
   end
 
