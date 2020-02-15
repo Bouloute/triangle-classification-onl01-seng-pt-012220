@@ -24,7 +24,7 @@ class Triangle
           puts error.message
       end
     end
-    
+
     return kind
 
   end
