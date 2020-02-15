@@ -30,8 +30,10 @@ class Triangle
     end
   end
 
-  def negative?(number)
-    number <= 0
+  def valid?
+    if @sides.find{|side| side <= 0} != nil 
+      return false
+    end
   end
 
   class TriangleError  < StandardError
