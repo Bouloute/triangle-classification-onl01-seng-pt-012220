@@ -9,6 +9,7 @@ class Triangle
   def kind
 binding.pry
     if valid?
+      puts "#{@sides} was considered valid"
       side_a, side_b, side_c = @sides[0], @sides[1], @sides[2]
       if    ((side_a == side_b) && (side_a == side_c))
         return :equilateral
@@ -18,6 +19,8 @@ binding.pry
         return :scalene
       end
     else
+      
+        puts "#{@sides} was considered invalid"
       begin
         raise TriangleError
       rescue TriangleError => error
