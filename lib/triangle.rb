@@ -16,7 +16,7 @@ class Triangle
 
   def kind
     binding.pry
-    if @kind == nil || @sides.find{|side| negative?(side)}
+    if @kind == nil || @sides.find{|side| negative?(side)} != nil
       begin
         raise TriangleError
       rescue TriangleError => error
