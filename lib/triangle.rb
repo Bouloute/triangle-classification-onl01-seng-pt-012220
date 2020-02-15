@@ -20,8 +20,11 @@ class Triangle
 #binding.pry
 
     if kind == nil || @sides.find{|side| negative?(side)} != nil
-
+      begin
         raise TriangleError
+      rescue TriangleError => error
+          puts error.message
+      end
     else
       return kind
     end
@@ -32,7 +35,9 @@ class Triangle
   end
 
   class TriangleError  < StandardError
-
+    def message
+      "TriangleError"
+    end
   end
 end
 
