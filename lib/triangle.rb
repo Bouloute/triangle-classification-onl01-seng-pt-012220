@@ -6,7 +6,7 @@ class Triangle
   end
 
   def kind
-    
+
     if valid?
       side_a, side_b, side_c = @sides[0], @sides[1], @sides[2]
       if    ((side_a == side_b) && (side_a == side_c))
@@ -19,7 +19,7 @@ class Triangle
     else
       raise TriangleError
     end
-    
+
   end
 
   def valid?
@@ -27,7 +27,7 @@ class Triangle
     if @sides.find{|side| side <= 0} != nil
       return false
     end
-    
+
     #triangle inequality
     if @sides[0] + @sides[1] <= @sides[2] || @sides[0] + @sides[2] <= @sides[1] || @sides[1] + @sides[2] <= @sides[0]
       return false
