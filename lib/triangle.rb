@@ -33,8 +33,5 @@ class Triangle
   end
 
   class TriangleError  < StandardError
-    def message
-      "TriangleError has been raised"
-    end
   end
 end
