@@ -7,7 +7,7 @@ class Triangle
   end
 
   def kind
-    #binding.pry
+    
     side_a, side_b, side_c = @sides[0], @sides[1], @sides[2]
     if    ((side_a == side_b) && (side_a == side_c))
       kind = :equilateral
@@ -16,6 +16,8 @@ class Triangle
     elsif ((side_a != side_b) && (side_a != side_c) && (side_b != side_c))
       kind = :scalene
     end
+
+binding.pry
 
     if kind == nil || @sides.find{|side| negative?(side)} != nil
       begin
