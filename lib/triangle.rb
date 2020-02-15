@@ -19,7 +19,6 @@ binding.pry
         return :scalene
       end
     else
-
         puts "#{@sides} was considered invalid"
       begin
         raise TriangleError
