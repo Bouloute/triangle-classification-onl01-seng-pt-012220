@@ -7,7 +7,7 @@ class Triangle
   end
 
   def kind
-    
+
     side_a, side_b, side_c = @sides[0], @sides[1], @sides[2]
     if    ((side_a == side_b) && (side_a == side_c))
       kind = :equilateral
