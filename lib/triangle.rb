@@ -30,6 +30,7 @@ binding.pry
     if @sides.find{|side| side <= 0} != nil
       return false
     end
+    true
   end
 
   class TriangleError  < StandardError
