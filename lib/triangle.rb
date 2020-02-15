@@ -24,9 +24,6 @@ binding.pry
           puts error.message
       end
     end
-
-
-
   end
 
   def valid?
