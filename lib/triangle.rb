@@ -16,7 +16,7 @@ class Triangle
 
   def kind
     binding.pry
-    if @kind == nil || @sides.include?{|side| negative?(side)}
+    if @kind == nil || @sides.include{|side| negative?(side)}
       begin
         raise TriangleError
       rescue TriangleError => error
