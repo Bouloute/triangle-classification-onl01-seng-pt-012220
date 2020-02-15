@@ -20,11 +20,8 @@ class Triangle
       end
     else
         puts "#{@sides} was considered invalid"
-      begin
+      
         raise TriangleError
-      rescue TriangleError => error
-          puts error.message
-      end
     end
   end
 
