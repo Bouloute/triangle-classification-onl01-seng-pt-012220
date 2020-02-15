@@ -7,7 +7,7 @@ class Triangle
   end
 
   def kind
-binding.pry
+#binding.pry
     if valid?
       puts "#{@sides} was considered valid"
       side_a, side_b, side_c = @sides[0], @sides[1], @sides[2]
