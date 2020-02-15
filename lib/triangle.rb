@@ -31,7 +31,7 @@ class Triangle
   end
 
   def valid?
-    if @sides.find{|side| side <= 0} != nil 
+    if @sides.find{|side| side <= 0} != nil
       return false
     end
   end
