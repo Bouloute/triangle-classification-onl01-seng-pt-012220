@@ -23,9 +23,9 @@ class Triangle
       rescue TriangleError => error
           puts error.message
       end
-    else
-      return kind
     end
+    return kind
+    
   end
 
   def valid?
