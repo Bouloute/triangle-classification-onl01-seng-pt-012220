@@ -35,12 +35,11 @@ class Triangle
     true
   end
 
-  class TriangleError  < StandardError
-    def message
-      "TriangleError has been raised"
-    end
+
+end
+class TriangleError  < StandardError
+  def message
+    "TriangleError has been raised"
   end
 end
 
-
-puts Triangle.new(0, 0, 0).kind
