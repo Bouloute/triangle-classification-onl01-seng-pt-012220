@@ -11,11 +11,11 @@ binding.pry
     if valid?
       side_a, side_b, side_c = @sides[0], @sides[1], @sides[2]
       if    ((side_a == side_b) && (side_a == side_c))
-        kind = :equilateral
+        return :equilateral
       elsif ((side_a == side_b) || (side_a == side_c) || (side_b == side_c))
-        kind = :isosceles
+        return :isosceles
       elsif ((side_a != side_b) && (side_a != side_c) && (side_b != side_c))
-        kind = :scalene
+        return :scalene
       end
     else
       begin
@@ -25,7 +25,7 @@ binding.pry
       end
     end
 
-    return kind
+  
 
   end
 
