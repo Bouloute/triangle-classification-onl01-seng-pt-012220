@@ -34,7 +34,7 @@ class Triangle
       return false
     end
 
-binding.pry
+#binding.pry
     true
   end
 
