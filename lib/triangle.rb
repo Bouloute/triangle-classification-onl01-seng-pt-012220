@@ -8,6 +8,7 @@ class Triangle
 
   def kind
     #binding.pry
+    side_a, side_b, side_c = @sides[0], @sides[1], @sides[2]
     if    ((side_a == side_b) && (side_a == side_c))
       kind = :equilateral
     elsif ((side_a == side_b) || (side_a == side_c) || (side_b == side_c))
@@ -21,14 +22,6 @@ class Triangle
         raise TriangleError
       rescue TriangleError => error
           puts error.message
-      end
-    else
-      if    ((side_a == side_b) && (side_a == side_c))
-        @kind = :equilateral
-      elsif ((side_a == side_b) || (side_a == side_c) || (side_b == side_c))
-        @kind = :isosceles
-      elsif ((side_a != side_b) && (side_a != side_c) && (side_b != side_c))
-        @kind = :scalene
       end
     end
   end
