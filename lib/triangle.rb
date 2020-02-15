@@ -27,6 +27,10 @@ class Triangle
     end
   end
 
+  def negative?(number)
+    number <= 0
+  end
+
   class TriangleError  < StandardError
     def message
       "TriangleError"
