@@ -20,7 +20,7 @@ class Triangle
       end
     else
         puts "#{@sides} was considered invalid"
-      
+
         raise TriangleError
     end
   end
