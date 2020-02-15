@@ -25,7 +25,7 @@ class Triangle
       end
     end
     return kind
-    
+
   end
 
   def valid?
