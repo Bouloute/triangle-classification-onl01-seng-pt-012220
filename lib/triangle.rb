@@ -19,14 +19,19 @@ class Triangle
         return :scalene
       end
     else
-        puts "#{@sides} was considered invalid"
-
-        raise TriangleError
+      puts "#{@sides} was considered invalid"
+      raise TriangleError
     end
   end
 
   def valid?
+    #sides cannot be negative nor 0
     if @sides.find{|side| side <= 0} != nil
+      return false
+    end
+
+    #triangle inequality
+    if @sides[0] + @sides[1] > @sides[2] || @sides[0] + @sides[2] > @sides[1] || @sides[1] + @sides[2] > @sides[0]
       return false
     end
     true
