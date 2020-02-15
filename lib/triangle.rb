@@ -42,4 +42,3 @@ class TriangleError  < StandardError
     "TriangleError has been raised"
   end
 end
-
