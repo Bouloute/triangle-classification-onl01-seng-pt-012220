@@ -35,10 +35,10 @@ class Triangle
     true
   end
 
-
-end
-class TriangleError  < StandardError
-  def message
-    "TriangleError has been raised"
+  class TriangleError  < StandardError
+    def message
+      "TriangleError has been raised"
+    end
   end
 end
+
