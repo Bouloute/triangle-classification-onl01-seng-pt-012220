@@ -15,7 +15,7 @@ class Triangle
     elsif ((side_a != side_b) && (side_a != side_c) && (side_b != side_c))
       kind = :scalene
     end
-    
+
     if kind == nil || @sides.find{|side| negative?(side)} != nil
       begin
         raise TriangleError
